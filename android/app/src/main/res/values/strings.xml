@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">test</string>
+    <string name="text_button_start">START</string>
+    <string name="liveness_failed">Liveness Detection failed. Please try again and carefully follow the instruction</string>
+    <string name="oops_something_happen">Oops! Something Happened</string>
+    <string name="no_connection_description">Close the app and reopen when your connection is stable</string>
+    <string name="okay">Okay</string>
 </resources>

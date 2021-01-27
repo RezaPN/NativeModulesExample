@@ -136,6 +136,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -184,10 +185,44 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
+
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation project(":livenesssdk")
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.androidSupport}"
+    implementation "com.android.support:support-v4:${rootProject.ext.androidSupport}"
+    implementation "com.android.support:design:${rootProject.ext.androidSupport}"
+    implementation "com.android.support:cardview-v7:${rootProject.ext.androidSupport}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.ext.androidSupport}"
+    implementation "com.android.support:percent:${rootProject.ext.androidSupport}"
+
+    //Retrofit
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.okhttp}"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:${rootProject.ext.okhttp}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okhttp}"
+    //RX Android
+    implementation "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxandroid2}"
+    implementation "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxjava2}"
+    //Java 1.8 Support For Lambda
+    implementation "android.arch.lifecycle:common-java8:${rootProject.ext.lifecycle}"
+    //View Model And Live Data
+    implementation "android.arch.lifecycle:extensions:${rootProject.ext.lifecycle}"
+    implementation "android.arch.lifecycle:viewmodel:${rootProject.ext.lifecycle}"
+    annotationProcessor "android.arch.lifecycle:compiler:${rootProject.ext.lifecycle}"
+    implementation "android.arch.lifecycle:runtime:${rootProject.ext.lifecycle}"
+
+
+    //Fast Android Networking
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.loopj.android:android-async-http:1.4.10'
+
 
     //kotlin stdlib
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

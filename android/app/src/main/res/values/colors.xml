@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E42E2C</color>
+    <color name="colorPrimaryDark">#C12927</color>
+    <color name="colorAccent">#e42e2c</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorGrayDivider">#DDD</color>
+    <color name="colorGrayBrownish">#777777</color>
+    <color name="colorGrayLighter">#e9e9e9</color>
+    <color name="colorGrayLight">#999</color>
+    <color name="colorGrayDavy">#555555</color>
+    <color name="colorTitleDialog">#555555</color>
+    <color name="colorMessageDialog">#555555</color>
+    <color name="colorButtonDialog">#e42e2c</color>
+
+    <color name="livenessHomeRingColor">#EAF2F6</color>
+    <color name="livenessHomeProcessBarColor">#E42E2C</color>
+    <color name="livenessHomeValidationFailProcessBarColor">#E42E2C</color>
+    <color name="livenessHomeBackgroundColor">#FFFFFF</color>
+    <color name="livenessHomePromptColor">#555555</color>
+    <color name="livenessExitTitlePromptColor">#000000</color>
+    <color name="livenessExitLeftPromptColor">#0076FF</color>
+    <color name="livenessExitRightPromptColor">#0076FF</color>
+    <color name="livenessRetryTitlePromptColor">#000000</color>
+    <color name="livenessRetryLeftPromptColor">#0076FF</color>
+    <color name="livenessRetryRightPromptColor">#0076FF</color>
+    <color name="livenessGuideRemindTextColor">#414244</color>
+    <color name="livenessGuideReadColor">#414244</color>
+    <color name="livenessDetectButtonTextColor">#FFFFFF</color>
+    <color name="livenessDetectButtonSelectedBGColor">#6AA0F2</color>
+    <color name="livenessDetectButtonHighlightBGColor">#4389E2</color>
+    <color name="livenessDetectButtonNormalBGColor">#CFD6DD</color>
+</resources>
